@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+   <div class="calc">
+       <h2 class="calc__heading">Tip Calculator</h2>
+
+       <div class="calc__box">
+           <label class="calc__label">Total Bill:</label>
+           <input type="text" placeholder="Enter your bill" class="calc__input" id="billAmount">
+       </div>
+       
+        <div class="calc__box">
+           <label class="calc__label">Tip:</label>
+           <input type="range" value="0" class="calc__range" id="tipInput">
+           <span id="tipOutput" class="calc__output">0</span>
+
+       </div>
+       
+        <div class="calc__box">
+           <label class="calc__label">Split(Number of people):</label>
+           <input type="range" min="1" max="10" value="1" class="calc__range" id="customers">
+           <span id="customersValue" class="calc__output"></span>
+
+       </div>
+  
+       <div class="calc__box">
+           <label class="calc__label">New Bill(per person): </label><span class="calc__output" id="billperPerson">0</span>
+       </div>
+       
+       <div class="calc__box">
+           <label class="calc__label">Tip Amount(per person): </label><span class="calc__output" id="tipperPerson">0</span>
+       </div>
+       
+   </div>
+   
+   
+   
+    <script src="app.js"></script>
+</body>
+</html>
